@@ -46,3 +46,6 @@ https://codility.com/programmers/lessons/5-prefix_sums/passing_cars/
 
 Fish
 https://codility.com/programmers/lessons/7-stacks_and_queues/fish/
+
+Distinct
+https://codility.com/programmers/lessons/6-sorting/distinct/
