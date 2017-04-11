@@ -49,3 +49,6 @@ https://codility.com/programmers/lessons/7-stacks_and_queues/fish/
 
 Distinct
 https://codility.com/programmers/lessons/6-sorting/distinct/
+
+Triangle
+https://codility.com/programmers/lessons/6-sorting/triangle/
