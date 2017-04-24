@@ -58,3 +58,6 @@ https://codility.com/programmers/lessons/7-stacks_and_queues/nesting/
 
 Brackets
 https://codility.com/programmers/lessons/7-stacks_and_queues/brackets/
+
+Dominator
+https://codility.com/programmers/lessons/8-leader/dominator/
