@@ -61,3 +61,6 @@ https://codility.com/programmers/lessons/7-stacks_and_queues/brackets/
 
 Dominator
 https://codility.com/programmers/lessons/8-leader/dominator/
+
+EquiLeader
+https://codility.com/programmers/lessons/8-leader/equi_leader/

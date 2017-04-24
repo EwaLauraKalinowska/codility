@@ -33,11 +33,8 @@ public class Dominator {
                 leaderPosition=i;
             }
         }
-        int N=A.length;
-        if(N%2==1){
-            N--;
-        }
-        if(howMenyLeader>N/2) {
+
+        if(howMenyLeader>A.length/2) {
             return leaderPosition;
         }else {
             return -1;
