@@ -67,3 +67,6 @@ https://codility.com/programmers/lessons/8-leader/equi_leader/
 
 MaxProfit
 https://codility.com/programmers/lessons/9-maximum_slice_problem/max_profit/
+
+MaxSliceProblem
+https://codility.com/programmers/lessons/9-maximum_slice_problem/max_slice_sum/
