@@ -70,3 +70,6 @@ https://codility.com/programmers/lessons/9-maximum_slice_problem/max_profit/
 
 MaxSliceProblem
 https://codility.com/programmers/lessons/9-maximum_slice_problem/max_slice_sum/
+
+StoneWall
+https://codility.com/programmers/lessons/7-stacks_and_queues/stone_wall/
