@@ -73,3 +73,6 @@ https://codility.com/programmers/lessons/9-maximum_slice_problem/max_slice_sum/
 
 StoneWall
 https://codility.com/programmers/lessons/7-stacks_and_queues/stone_wall/
+
+CountFactors
+https://codility.com/programmers/lessons/10-prime_and_composite_numbers/count_factors/
