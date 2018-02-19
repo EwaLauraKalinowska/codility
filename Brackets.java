@@ -14,14 +14,14 @@ public class Brackets {
             return 0;
         }
 
-        Stack<Character> stack = new Stack<>();
+        Stack<Character> openBrackets = new Stack<>();
 
         for (int i = 0; i < S.length(); i++) {
             switch (S.charAt(i)) {
                 case ')': {
-                    if(!stack.isEmpty()){
-                        if ('('== stack.peek()) {
-                            stack.pop();
+                    if(!openBrackets.isEmpty()){
+                        if ('('== openBrackets.peek()) {
+                            openBrackets.pop();
 
                         } }else {
                         return 0;
@@ -30,10 +30,9 @@ public class Brackets {
                     break;
                 }
                 case '}': {
-                    if(!stack.isEmpty()){
-                        if ('{' == stack.peek() && !stack.isEmpty()) {
-                            stack.pop();
-
+                    if(!openBrackets.isEmpty()){
+                        if ('{' == openBrackets.peek() && !openBrackets.isEmpty()) {
+                            openBrackets.pop();
                         } }else {
                         return 0;
                     }
@@ -41,23 +40,23 @@ public class Brackets {
                     break;
                 }
                 case ']': {
-                    if(!stack.isEmpty()){
-                        if ('[' == stack.peek()) {
-                            stack.pop();
-
-                        } }else {
+                    if(!openBrackets.isEmpty()){
+                        if ('[' == openBrackets.peek()) {
+                            openBrackets.pop();
+                        }
+                    }else {
                         return 0;
                     }
 
                     break;
                 }
                 default: {
-                    stack.push(S.charAt(i));
+                    openBrackets.push(S.charAt(i));
                     break;
                 }
             }
         }
-        if (stack.isEmpty()) {
+        if (openBrackets.isEmpty()) {
             return 1;
         } else {
             return 0;

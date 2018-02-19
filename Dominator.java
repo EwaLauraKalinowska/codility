@@ -22,19 +22,17 @@ public class Dominator {
                     itIsLeader=1;
                 }
             }
-
-
         }
         int leaderPosition=-1;
-        int howMenyLeader=0;
+        int howManyLeader=0;
         for(int i=0; i<A.length; i++){
             if(A[i]==leader){
-                howMenyLeader++;
+                howManyLeader++;
                 leaderPosition=i;
             }
         }
 
-        if(howMenyLeader>A.length/2) {
+        if(howManyLeader>A.length/2) {
             return leaderPosition;
         }else {
             return -1;

@@ -20,8 +20,6 @@ public class EquiLeader {
                     itIsLeader=1;
                 }
             }
-
-
         }
         int howManyLeader=0;
         for(int i=0; i<A.length; i++){
@@ -45,7 +43,6 @@ public class EquiLeader {
             if(leaderYet>(i+1)/2&&howManyLeader-leaderYet>(A.length-i-1)/2){
                 howManyEquiLeaders++;
             }
-
         }
         return howManyEquiLeaders;
     }

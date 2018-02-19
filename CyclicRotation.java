@@ -7,17 +7,17 @@ public class CyclicRotation {
         if (A.length==0||A.length==1||K==0){
             return A;
         }else {
-            int[] B=new int[A.length];
+            int[] rotationA=new int[A.length];
             K=K%A.length;
-            int p=B.length-1-K;
-            for(int i =B.length-1; i>=0; i--){
-                B[i]=A[p];
-                p--;
-                if(p==-1){
-                    p=B.length-1;
+            int indexOfA=rotationA.length-1-K;
+            for(int i =rotationA.length-1; i>=0; i--){
+                rotationA[i]=A[indexOfA];
+                indexOfA--;
+                if(indexOfA==-1){
+                    indexOfA=rotationA.length-1;
                 }
             }
-            return B;
+            return rotationA;
         }
     }
 

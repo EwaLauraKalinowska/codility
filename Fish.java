@@ -6,8 +6,8 @@ import java.util.Stack;
 public class Fish {
     public int solution(int[] A, int[] B) {
         // write your code in Java SE 8
-        Stack<Integer> stack=new Stack<>();
-        int liveFisch=0;
+        Stack<Integer> fishMovingUpstream=new Stack<>();
+        int liveFish=0;
         int j=0;
         if(A.length==1){
             return 1;
@@ -21,24 +21,24 @@ public class Fish {
         }
         while (B[j]==0){
             j++;
-            liveFisch++;
+            liveFish++;
         }
         for(int i=j; i<B.length; i++){
             if(B[i]==1){
-                stack.push(A[i]);
+                fishMovingUpstream.push(A[i]);
             }else{
-                while (!stack.isEmpty()&&stack.peek()<A[i]){
-                    stack.pop();
+                while (!fishMovingUpstream.isEmpty()&&fishMovingUpstream.peek()<A[i]){
+                    fishMovingUpstream.pop();
                 }
-                if (stack.isEmpty()){
-                    liveFisch++;
+                if (fishMovingUpstream.isEmpty()){
+                    liveFish++;
                 }
             }
         }
-        while (!stack.isEmpty()){
-            liveFisch++;
-            stack.pop();
+        while (!fishMovingUpstream.isEmpty()){
+            liveFish++;
+            fishMovingUpstream.pop();
         }
-        return liveFisch;
+        return liveFish;
     }
 }

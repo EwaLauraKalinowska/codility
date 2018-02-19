@@ -8,17 +8,17 @@ public class BinaryGap {
             N=N/2;
         }
         int max=0;
-        int binarygap=0;
+        int binaryGap=0;
         while(N>1){
             if(N%2==1){
                 N=N-1;
                 N=N/2;
-                binarygap=0;
+                binaryGap=0;
             }else{
                 N=N/2;
-                binarygap++;
-                if(binarygap>max){
-                    max=binarygap;
+                binaryGap++;
+                if(binaryGap>max){
+                    max=binaryGap;
                 }
             }
         } return max;
