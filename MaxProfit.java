@@ -16,7 +16,6 @@ public class MaxProfit {
             if(A[i]<min){
                 min=A[i];
             }
-
         }
         if(maxProfit<0){
             return 0;
